@@ -1,0 +1,19 @@
+{
+  "name": "camrecorder",
+  "version": "1.0.0",
+  "description": "A simple camera recorder that allows to record video clips (optionally with audio) in desktop and mobile browsers.",
+  "main": "camrecorder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backface/CamRecorder.git"
+  },
+  "author": "Michael Aschauer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/backface/CamRecorder/issues"
+  },
+  "homepage": "https://github.com/backface/CamRecorder#readme"
+}
