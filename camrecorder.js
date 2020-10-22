@@ -130,6 +130,14 @@ class CamRecorder {
 	}
 
 	/**
+	 * closes stream
+	 */
+  closeStreams() {
+    this._stream.getTracks().forEach(t => t.stop());
+    this._videoElement.srcObject = null;
+  }
+  
+	/**
 	 * Starts recording
 	 */
 	start(){
