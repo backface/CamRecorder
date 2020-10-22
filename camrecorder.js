@@ -29,7 +29,7 @@
  */
 
 import { MJPEGBuilder } from './mjpegaudio'
-import { Recorder } from './recorderjs'
+import { Recorder } from './recorder'
 
 class CamRecorder {
   /**

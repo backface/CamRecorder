@@ -4,6 +4,7 @@
   "description": "A simple camera recorder that allows to record video clips (optionally with audio) in desktop and mobile browsers.",
   "main": "camrecorder.js",
   "scripts": {
+    "pub": "npm version patch --force && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
