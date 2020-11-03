@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/backface/CamRecorder/issues"
   },
-  "homepage": "https://github.com/backface/CamRecorder#readme"
+  "homepage": "https://github.com/backface/CamRecorder#readme",
+  "dependencies": {
+    "webrtc-adapter": "^7.7.0"
+  }
 }

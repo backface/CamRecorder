@@ -30,6 +30,7 @@
 
 import { MJPEGBuilder } from './mjpegaudio'
 import { Recorder } from './recorder'
+import adapter from 'webrtc-adapter'
 
 class CamRecorder {
   /**
@@ -41,7 +42,7 @@ class CamRecorder {
   * @param {number} fps
   */
   constructor(videoElement, recordAudio, videoWidth, videoHeight, fps){
-
+    console.log(adapter.browserDetails.browser)
 		this._hasMediaRecorder = typeof window.MediaRecorder != 'undefined';
 		console.log('Native MediaRecorder: '+(this._hasMediaRecorder?'yes':'no'));
 
