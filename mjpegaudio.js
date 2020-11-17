@@ -88,7 +88,7 @@
 		}
 
 		addVideoStreamData(list, blob) {
-			var stream = MJPEGBuilder.createMoviStream();
+			var stream = this.createMoviStream();
 			stream.dwSize = blob.size;
 			stream.handler = function(bb) {
 				bb.push(blob);
@@ -99,7 +99,7 @@
 
 		// adds audio as single (non-interleaved) 01wb chunk
 		addAudioStreamData(list, blob) {
-			var stream = MJPEGBuilder.createMoviStream();
+			var stream = this.createMoviStream();
 			stream.chType = '01wb';
 			stream.dwSize = blob.size;
 			stream.handler = function(bb) {

@@ -81,7 +81,10 @@ class CamRecorder {
 				this._canvas.style = 'display: none';
 			}
 			this._ctx = this._canvas.getContext('2d');
-			this._mimeType = 'video/avi;codec=mjpg' + (this._audio?',pcm':'');
+      this._audio = false;
+      console.log("we don't have media recorder wie record MJPEG and disable audio!")
+			//this._mimeType = 'video/avi;codec=mjpg' + (this._audio?',pcm':'');
+      this._mimeType = 'video/avi;codec=mjpg';
 			this._container = 'avi';
     }
     console.log('Using MimeType: '+this._mimeType);
